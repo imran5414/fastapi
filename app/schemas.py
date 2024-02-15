@@ -55,3 +55,4 @@ class token(BaseModel):
 class Vote(BaseModel):
     post_id:int
     dir:conint(le=1)
+    #a
