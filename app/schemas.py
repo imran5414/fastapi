@@ -16,6 +16,7 @@ class Post(BaseModel):
     # id:int
     # owner_id:int
     # owner:UserOut
+    #
 
 class Cpost(Post):
     created_at:datetime
