@@ -11,7 +11,7 @@ def get_users(db: Session = Depends(get_db)):
     users=db.query(models.users).all()
     #print(users)
     if not users:
-        return {"status":"No users in database"}
+        return {"status":"Not a single users in database"}
     return {"status":users} 
 
 @router.post("/",status_code=status.HTTP_201_CREATED,response_model=schemas.UserOut) 
